@@ -18,7 +18,7 @@ class ListItemsRecyclerViewAdapter(val list: TaskList) : RecyclerView.Adapter<Li
     // 10 - Hook up the data to the TextView using the ViewBinding - bind the TextView to a
     // specific task from the list depending on the position of the ViewHolder
     override fun onBindViewHolder(holder: ListItemViewHolder, position: Int) {
-        holder.binding.textView.text = list.tasks[position]
+        holder.binding.textViewTask.text = list.tasks[position]
     }
 
     // 10 - Tells RecyclerView how many items to display - returns the number of tasks in the list
